@@ -1,0 +1,9 @@
+---
+const { title, contact, footer } = Astro.props;
+---
+
+<footer class="text-text-200 text-xs -my-4 px-10 w-full flex justify-between opacity-20">
+	<p>{title} © <script is:inline>document.write(new Date().getFullYear());</script></p>
+	<p>Phone: {contact.phone}</p><p>Mail: {contact.mail} </p>
+	<a class="font-semibold" href={footer.madeByUrl} alt=`visit ${footer.madeBy}` target="_blank" rel="noopener noreferrer">{footer.madeBy}</a>
+</foooter>

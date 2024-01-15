@@ -1,0 +1,24 @@
+---
+import "../styles/index.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const { basic, header, contact, footer } = Astro.props;
+
+---
+
+<!doctype html>
+<html lang="en" data-theme={basic.theme}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={basic.description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{basic.title}</title>
+	</head>
+	<body class="bg-bg-100">
+		{header.exists && <Header title={basic.title} header={header}/>}
+		<slot />
+		{footer.exists && <Footer contact={contact} title={basic.title} footer={footer} /> }
+	</body>
+</html>

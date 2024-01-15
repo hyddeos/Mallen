@@ -1,0 +1,12 @@
+---
+import { Image } from 'astro:assets';
+
+const { background } = Astro.props;
+---
+<Image class="image-clip max-h-screen object-cover w-full h-full overflow-hidden" src={background.image} alt={background.alt} />
+	
+	<style>
+		.image-clip {
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+	}
+	</style>
