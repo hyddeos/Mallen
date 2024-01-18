@@ -55,23 +55,26 @@ const about = {
 // Footer.
 const footer = {
 	exists: true, // Set to false you don´t need this component
-	madeBy: "Theme By Grafoma",
-	madeByUrl: "https://grafoma.se/"
+	madeBy: "Theme By ESH", // Feel free to change to whatever you like, no need to attribute
+	madeByUrl: "https://eshtropy.se/"
 }
 
 ---
 
 <Layout basic={basic} header={header} contact={contact} footer={footer}>
-	<main class="*:min-h-screen min-h-screen flex">
-		<div class="w-3/5 pt-10 flex items-center justify-center">
-			<div class="p-10 max-w-5xl">
+	<main class="*:min-h-screen min-h-screen lg:flex">
+		<div class="w-full absolute -z-10 block lg:hidden">
+			<Background background={background}/>
+		</div>
+		<div class="w-full lg:w-3/5 pt-10 flex items-center justify-center">
+			<div class="md:p-10 px-4 p-10 max-w-5xl">
 				<Titles title={basic.title} slogan={basic.slogan}/>
 				{about.exists && <About />} 
 				{contact.exists && <Contact contact={contact} />}
 				{social.exists && <Social social={social} />}
 			</div>
 		</div>
-		<div class="w-2/5">
+		<div class="lg:w-2/5 hidden lg:block">
 			<Background background={background}/>
 		</div>
 	</main>
