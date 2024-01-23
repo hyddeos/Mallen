@@ -7,12 +7,12 @@
 [View live page](eshtropy.se/mallen) (dark color theme). See more screenshots below
 
 # Features
- ✅ Done in ~10min*
- ✅ Pagespeed - 100/100/100/100
- ✅ 4 color themes(or add your own)
- ✅ Mobile friendly
- ✅ Tailwind
- ✅ Astro Icons
+ ✅ Done in ~10min* <br />
+ ✅ Pagespeed - 100/100/100/100 <br />
+ ✅ 4 color themes(or add your own) <br />
+ ✅ Mobile friendly <br />
+ ✅ Tailwind <br />
+ ✅ Astro Icons <br />
 
 Really friendly for beginners or people in a hurry. 
 
