@@ -1,4 +1,5 @@
 # Mallen
+![localhost_4321_](https://github.com/hyddeos/Mallen/assets/39992041/d581b574-1694-4ae7-a5e5-da2c313a65b6)
 
 
 # Demo
@@ -101,6 +102,12 @@ Add your own html/css styled about text.
 Includes 4 color themes from the start: *dark, light, blue, red*. Change the theme simply by edit the `theme:  "Color",` in the index.Astro file under the Basic section. You simply add or modify your own color theme here in this file.
 
 # Screenshots (colors themes)
+
+### Dark
+<img src="https://github.com/hyddeos/Mallen/assets/39992041/a7aa1774-c098-4271-80c8-91ee6fa6a978" width=600 />
+
+### Light
+
 
 # How to / installation
 
