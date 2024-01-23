@@ -7,7 +7,7 @@
 [View live page](eshtropy.se/mallen) (dark color theme). See more screenshots below
 
 # Features
- ✅ Done in ~10min* <br />
+ ✅ Get done in ~10min* <br />
  ✅ Pagespeed - 100/100/100/100 <br />
  ✅ 4 color themes(or add your own) <br />
  ✅ Mobile friendly <br />
