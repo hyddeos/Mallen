@@ -107,7 +107,13 @@ Includes 4 color themes from the start: *dark, light, blue, red*. Change the the
 <img src="https://github.com/hyddeos/Mallen/assets/39992041/a7aa1774-c098-4271-80c8-91ee6fa6a978" width=600 />
 
 ### Light
+<img src="https://github.com/hyddeos/Mallen/assets/39992041/f3cc3bcf-b499-4dd4-9d9e-d3918d8020b1" width=600 />
 
+### Red
+<img src="https://github.com/hyddeos/Mallen/assets/39992041/0ed01f58-4854-4aa2-9449-ec678415fd0f" width=600 />
+
+### Blue 
+<img src="https://github.com/hyddeos/Mallen/assets/39992041/988a4b9c-4fbc-4f2b-b308-9f488cf14fd8" width=600 />
 
 # How to / installation
 
