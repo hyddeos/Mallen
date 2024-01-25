@@ -26,11 +26,11 @@
 }
 
 [data-theme="blue"] {
-    --color-primary-100:#007bff;
-    --color-primary-200:#0062cb;
+    --color-primary-100:#1486ff;
+    --color-primary-200:#016ee3;
     --color-text-100:#ebdbc2;
     --color-text-200:#cabca6;
-    --color-bg-100:#001327;
+    --color-bg-100:#000f1e;
     --color-bg-200:#000c19;
 }
 
