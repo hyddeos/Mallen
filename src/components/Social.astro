@@ -1,0 +1,15 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const { social } = Astro.props;
+
+---
+<div class="mt-10 text-primary-100 text-center ">
+	<h3 class="text-center text-text-100 text-4xl py-4" >Social</h3>
+	<div class="flex justify-evenly pb-4 hover:*:text-bg-100 hover:*:bg-primary-200 hover:*:rounded">
+		{social.instagram && <a href={social.instagram} target="_blank" rel="noopener noreferrer"><Icon name="mdi:instagram" class="size-14 m-2" /></a>}
+		{social.facebook && <a href={social.facebook} target="_blank" rel="noopener noreferrer"><Icon name="mdi:facebook" class="size-14 m-2" /></a>}
+		{social.snapchat && <a href={social.snapchat} target="_blank" rel="noopener noreferrer"><Icon name="mdi:snapchat" class="size-14 m-2" /></a>}
+		{social.linkedin && <a href={social.linkedin} target="_blank" rel="noopener noreferrer"><Icon name="mdi:linkedin" class="size-14 m-2" /></a>}
+	</div>
+</div>

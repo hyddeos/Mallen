@@ -1,0 +1,10 @@
+---
+import { Image } from 'astro:assets';
+
+const { title, header } = Astro.props;
+---
+<header class="absolute flex p-4 lg:px-10">
+	{header.logo ? 
+		<Image class="size-12 lg:size-16" src={header.logo} alt={title + " logo"}	/>
+		:<p class="text-2xl text-primary-100 font-extrabold uppercase text-center">{title}</p>}	
+</header>

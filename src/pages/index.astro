@@ -1,0 +1,81 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Titles from '../components/Titles.astro';
+import Background from '../components/Background.astro'
+import About from '../components/About.astro'
+import Contact from '../components/Contact.astro';
+import Social from '../components/Social.astro';
+
+// Basic Info.
+const basic = {
+	theme: "blue", // Choose between: dark, light, blue, red or make your own. See src/styles/themes.css for details
+	title: "Quick Repair", // Page name
+	description: "Your Local Car Repair Shop. All brands as well as new and old cars are welcome", // Page description 
+	slogan: "Your local Car Repair Shop" // slogan or short description, is displayed under Title on the page
+}
+
+//Header.
+import logo from '../assets/logo.svg'; // add your logo image in /src/assets or remove this import if there is no logo, The title will be displayed instead
+const header = {
+	exists: true, // Set to false you don´t need this component
+	logo: logo, // remove this line if you want your site title displayed instead of a logo
+}
+
+// Background image.
+import car from '../assets/car.webp' // add your own image in /src/assets or remove this import if there is no image
+const background = {
+	exists: true, // Set to false you don´t need this component
+	image: car, // Change your added image
+	alt: "a car ready for a paint job" // Add a alt description of the image
+}
+
+// Contact.
+const contact = {
+	exists: true, // Set to false you don´t need this component
+	mail: "repairman@repair.now",
+	phone: "08 - 34 40 80",
+	adress: "Storgatan 44",
+	adress2: "439 90 Strängnäs" // Use this part as well to get some better styling on the adress
+}
+
+// Social medias. Insert the full URL. if varible is empty logo wont be displayed, instagram: "";
+const social = {
+	exists: true, // Set to false you don´t need this component
+	instagram: "https://instagram.com/sampleaccount/",
+	facebook: "https://facebook.com/sampleaccount/",
+	snapchat: "https://snapchat.com/sampleaccount/",
+	linkedin: "https://linkedin.com/company/sampleaccount/",
+}
+
+// About. Add and edit the about text inside the About.astro component.
+const about = {
+	exists: true // Set to false if there is no About info
+}
+
+// Footer.
+const footer = {
+	exists: true, // Set to false you don´t need this component
+	madeBy: "Theme By ESH", // Feel free to change to whatever you like, no need to attribute
+	madeByUrl: "https://eshtropy.se/"
+}
+
+---
+
+<Layout basic={basic} header={header} contact={contact} footer={footer}>
+	<main class="*:min-h-screen min-h-screen lg:flex">
+		<div class="w-full absolute -z-10 block lg:hidden">
+			<Background background={background}/>
+		</div>
+		<div class="w-full lg:w-3/5 pt-10 flex items-center justify-center">
+			<div class="md:p-10 px-4 p-10 max-w-5xl">
+				<Titles title={basic.title} slogan={basic.slogan}/>
+				{about.exists && <About />} 
+				{contact.exists && <Contact contact={contact} />}
+				{social.exists && <Social social={social} />}
+			</div>
+		</div>
+		<div class="lg:w-2/5 hidden lg:block">
+			<Background background={background}/>
+		</div>
+	</main>
+</Layout>
