@@ -4,7 +4,7 @@
 
 # Demo
 
-[View live page](eshtropy.se/mallen). See more screenshots below
+[View live page](https://mallen.eshtropy.se/)). See more screenshots below
 
 # Features
 
